@@ -11,7 +11,9 @@ const server = express();
 server.set('view engine', 'ejs');
 
 server.get('/', (req, res) => {
-    res.send('Hello Express');
+    res.render('index', {
+        content: 'Hello with EXPR and <h1>EJS!</h1>'
+    });
 });
 
 // server.get('/about.html', (req, res) => {

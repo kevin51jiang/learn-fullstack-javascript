@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/kevin51jiang/learn-fullstack-javascript#readme",
   "dependencies": {
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mongodb": "^3.1.1",
     "npm": "^6.3.0",
@@ -38,6 +39,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "bable-loader": "0.0.1-security",
     "nodemon": "^1.18.3",
-    "webpack": "^4.16.5"
+    "webpack": "^4.16.5",
+    "webpack-command": "^0.4.1"
   }
 }
