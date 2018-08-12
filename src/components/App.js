@@ -1,16 +1,10 @@
 import React from "react";
-
 import Header from './Header';
 import ContestList from './ContestList';
 
 
-
-const pushState = (obj, url) => {
+const pushState = (obj, url) =>
     window.history.pushState(obj, '', url);
-}
-
-
-
 
 class App extends React.Component {
 
@@ -20,16 +14,10 @@ class App extends React.Component {
         contests: this.props.initialContests
     };
 
-    componentDidMount() { }
-
-    componentWillUnmount() {
-
-    }
-
-    fetchContest = (contestID) => {
+    fetchContest = (contestId) => {
         pushState(
-            { currentContestID: contestID },
-            '/contest/${contestID}'
+            { currentContestID: contestId },
+            `/contest/${contestId}`
         );
     };
 
@@ -39,8 +27,8 @@ class App extends React.Component {
             <div className="App">
                 <Header message={this.state.pageHeader} />
                 <ContestList
-                    contests={this.state.contests}
-                    onContestClick={this.fetchContest()} />
+                    onContestClick={this.fetchContest}
+                    contests={this.state.contests} />
             </div>
         )
     }

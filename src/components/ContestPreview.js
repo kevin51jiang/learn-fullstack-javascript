@@ -12,7 +12,7 @@ class ContestPreview extends Component {
                 <div className="category-name">
                     {this.props.categoryName}
                 </div>
-                <div className="contestName">
+                <div className="contest-name">
                     {this.props.contestName}
                 </div>
             </div >
