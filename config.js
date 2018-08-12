@@ -11,7 +11,7 @@ export const logStars = function (message) {
 
 export default {
     port: ENV.port || 8080,
-    host: ENV.host || '0.0.0.0',
+    host: ENV.host || 'localhost',
     get serverUrl() {
         return `http://${this.host}:${this.port}`;
     }
