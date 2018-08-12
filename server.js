@@ -6,7 +6,7 @@ import path from 'path';
 
 
 import express from 'express';
-import { ServerRequest } from 'http';
+
 const server = express();
 
 server.use(sassMiddleware({
